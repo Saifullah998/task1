@@ -1,0 +1,292 @@
+/* Importing both DM Sans and Manrope fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Manrope:wght@400;500;700&display=swap');
+
+/* General reset for margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans", sans-serif; /* Default font */
+}
+
+/* Flexbox styling for .all container */
+.all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+
+/* Styling for div1 section */
+.div1 {
+    padding-top: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 64px;
+    position: relative;
+    border-radius: 4px;
+    background: var(--Shades-White, #FFF);
+}
+
+/* Title styling (h1) */
+.title h1 {
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-family: "DM Sans", sans-serif; /* Using DM Sans */
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Paragraph styling within the title */
+.title p {
+    color: var(--Neutral-800, #191D23);
+    text-align: center;
+    font-family: "DM Sans", sans-serif; /* Using DM Sans */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Pay section styling for paragraphs */
+.pay p {
+    color: var(--Neutral-800, #191D23);
+    font-family: "DM Sans", sans-serif; /* Using DM Sans */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Arrow image styling */
+.div1 .Arrow img {
+    width: 91.874px;
+    height: 55.337px;
+    flex-shrink: 0;
+}
+
+/* Styling for powerfulspan */
+.powerfulspan {
+    color: #55CBFB;
+}
+
+/* Styling for creators section */
+.creators {
+    color: #1D4ED8;
+    text-align: center;
+}
+
+/* General paragraph styling */
+.para {
+    color: #191D23;
+    font-size: 20px;
+    padding-top: 16px;
+}
+
+/* Pay section layout */
+.pay {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Arrow layout and positioning */
+.Arrow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    bottom: -17px;
+    right: -30px;
+}
+
+.Arrow img {
+    width: 30px;
+}
+
+.Arrow p {
+    color: #1D4ED8;
+    font-weight: bold;
+}
+
+/* Pricing Cards Layout */
+.parent {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.child {
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    gap: 24px !important;
+    text-align: left;
+}
+
+/* Content within each pricing card */
+.childContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 11px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+/* Heading within child content */
+.childContent h3 {
+    color: var(--Neutral-800, #191D23);
+    font-family: "Manrope", sans-serif; /* Using Manrope */
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Paragraph inside childContent */
+.childContent p {
+    color: var(--Neutral-500, #64748B);
+    font-family: "Manrope", sans-serif; /* Using Manrope */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Pricing text styling */
+.price {
+    color: var(--Neutral-800, #191D23);
+    font-family: "Manrope", sans-serif; /* Using Manrope */
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* Button styling */
+.btn {
+    color: #1D4ED8;
+    display: flex;
+    height: 44px;
+    padding: 6px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+    border: 1px solid #1D4ED8;
+    border-radius: 4px;
+    background-color: white;
+    margin-top: 24px;
+}
+
+/* List styling */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0;
+    margin-top: 40px;
+}
+
+ul li {
+    color: #191D23;
+    font-family: manrope;
+    font-size: 14px;
+    margin: 8px 0;
+    display: flex;
+    gap: 17px;
+    margin-top: 12px;
+}
+
+/* Custom styling for childB component */
+.childB {
+    border-radius: 12px;
+    background: var(--Primary-Blue-500, #1D4ED8);
+    box-shadow: 0px 10px 25px 0px #CCD9FF;
+}
+
+.childB .childContent h3 {
+    color: var(--Shades-White, #FFF);
+    font-family: "Manrope", sans-serif; /* Using Manrope */
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.childB .childContent p {
+    color: var(--Neutral-50, #F7F8F9);
+    font-family: "Manrope", sans-serif; /* Using Manrope */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+}
+
+.childB .childContent p span {
+    color: var(--Shades-White, #FFF);
+    font-family: "Manrope", sans-serif; /* Using Manrope */
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.childB .childContent ul li {
+    color: var(--Shades-White, #FFF);
+    font-family: "Manrope", sans-serif; /* Using Manrope */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* Round icon styling */
+.round {
+    border-radius: 100px;
+    background: var(--Primary-Blue-50, #E8EDFB);
+    height: 25px;
+    width: 25px;
+    display: inline-flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.round img {
+    max-width: 100%; 
+    max-height: 100%; 
+    display: block; 
+}
+
+/* List style for centered ul */
+ul {
+    text-align: center;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin: 10px;
+}
+.liclass{
+color: var(--Neutral-400, #A0ABBB);
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.xyzz{
+    margin-top: 20px !important;
+}
