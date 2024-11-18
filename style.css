@@ -77,10 +77,17 @@ body, html {
 
 /* Styling for creators section */
 .creators {
-    color: #1D4ED8;
-    text-align: center;
-}
+background: linear-gradient(266deg, #55CBFB -21.73%, #1D4ED8 96.22%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: "DM Sans";
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
 
+}
 /* General paragraph styling */
 .para {
     color: #191D23;
@@ -89,12 +96,12 @@ body, html {
 }
 
 /* Pay section layout */
-.pay {
+/* .pay {
     display: flex;
     gap: 16px;
     align-items: center;
     justify-content: center;
-}
+} */
 
 /* Arrow layout and positioning */
 .Arrow {
@@ -102,8 +109,8 @@ body, html {
     align-items: center;
     gap: 8px;
     position: absolute;
-    bottom: -17px;
-    right: -30px;
+    bottom: -30px;
+    right: -40px;
 }
 
 .Arrow img {
@@ -128,21 +135,33 @@ body, html {
     background-color: white;
     border-radius: 8px;
     padding: 16px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* padding: 40px 24px; */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
     flex: 1;
     gap: 24px !important;
     text-align: left;
 }
 
 /* Content within each pricing card */
-.childContent {
+/* .childContent {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 11px;
+    padding: 40px 24px;
+    flex: 1 0 0;
+    align-self: stretch;
+} */
+.childContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center children horizontally */
+    gap: 11px;
+    padding: 40px 24px;
     flex: 1 0 0;
     align-self: stretch;
 }
+
 
 /* Heading within child content */
 .childContent h3 {
@@ -176,6 +195,7 @@ body, html {
 
 /* Button styling */
 .btn {
+    cursor: pointer;
     color: #1D4ED8;
     display: flex;
     height: 44px;
@@ -195,20 +215,21 @@ ul {
     list-style: none;
     padding: 0;
     margin: 16px 0 0;
+    
     margin-top: 40px;
 }
 
 ul li {
     color: #191D23;
     font-family: manrope;
-    font-size: 14px;
+    font-size: 16px;
     margin: 8px 0;
     display: flex;
     gap: 17px;
     margin-top: 12px;
 }
 
-/* Custom styling for childB component */
+
 .childB {
     border-radius: 12px;
     background: var(--Primary-Blue-500, #1D4ED8);
@@ -217,7 +238,7 @@ ul li {
 
 .childB .childContent h3 {
     color: var(--Shades-White, #FFF);
-    font-family: "Manrope", sans-serif; /* Using Manrope */
+    font-family: "Manrope", sans-serif; 
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -226,7 +247,7 @@ ul li {
 
 .childB .childContent p {
     color: var(--Neutral-50, #F7F8F9);
-    font-family: "Manrope", sans-serif; /* Using Manrope */
+    font-family: "Manrope", sans-serif; 
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -236,16 +257,18 @@ ul li {
 
 .childB .childContent p span {
     color: var(--Shades-White, #FFF);
-    font-family: "Manrope", sans-serif; /* Using Manrope */
+    font-family: "Manrope", sans-serif; 
     font-size: 56px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    justify-content: center;
+    text-align: center;
 }
 
 .childB .childContent ul li {
     color: var(--Shades-White, #FFF);
-    font-family: "Manrope", sans-serif; /* Using Manrope */
+    font-family: "Manrope", sans-serif; 
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -253,12 +276,13 @@ ul li {
 }
 
 /* Round icon styling */
-.round {
+/* .round{
     border-radius: 100px;
     background: var(--Primary-Blue-50, #E8EDFB);
     height: 25px;
     width: 25px;
     display: inline-flex; 
+    text-align: center;
     justify-content: center; 
     align-items: center; 
 }
@@ -267,11 +291,35 @@ ul li {
     max-width: 100%; 
     max-height: 100%; 
     display: block; 
+} */
+.round {
+    /* border-radius: 50%; 
+    background: var(--Primary-Blue-50, #E8EDFB); 
+    height: 30px; 
+    width: 30px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    overflow: hidden;  */
 }
+
+/* .round img {
+    width: 70%; 
+    height: 70%;
+    display: block; 
+    object-fit: contain; 
+    margin: 0; } */
+.check{
+    border-radius: 100px;
+background: var(--Primary-Blue-50, #E8EDFB);
+height: 30px;
+width: 30px;
+}
+
 
 /* List style for centered ul */
 ul {
-    text-align: center;
+    /* text-align: center; */
     padding: 0;
 }
 
@@ -286,7 +334,72 @@ font-size: 16px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
+padding-left: 0;
 }
 .xyzz{
     margin-top: 20px !important;
 }
+
+  .pay {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif; /* Optional for consistency */
+    font-size: 16px; /* Adjust as needed */
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px; /* Rounded sliders */
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%; /* Rounded circle */
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .payP1, .payP2 {
+    margin: 0; /* Ensure text aligns perfectly with the switch */
+  }
+  
+   
