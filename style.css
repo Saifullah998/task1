@@ -92,7 +92,7 @@ line-height: normal;
 .para {
     color: #191D23;
     font-size: 20px;
-    padding-top: 16px;
+    /* padding-top: 16px; */
 }
 
 /* Pay section layout */
@@ -114,7 +114,10 @@ line-height: normal;
 }
 
 .Arrow img {
-    width: 30px;
+    max-width: 100%; 
+    height: auto; 
+    flex-shrink: 0; 
+    
 }
 
 .Arrow p {
@@ -168,6 +171,7 @@ line-height: normal;
     color: var(--Neutral-800, #191D23);
     font-family: "Manrope", sans-serif; /* Using Manrope */
     font-size: 22px;
+    align-self: stretch;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
