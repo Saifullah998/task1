@@ -137,7 +137,7 @@ line-height: normal;
     padding: 16px;
     /* padding: 40px 24px; */
     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
-    flex: 1;
+    /* flex: 1; */
     gap: 24px !important;
     text-align: left;
 }
@@ -156,8 +156,8 @@ line-height: normal;
     display: flex;
     flex-direction: column;
     align-items: center; /* Center children horizontally */
-    gap: 11px;
-    padding: 40px 24px;
+    /* gap: 11px; */
+    padding: 40px 20px;
     flex: 1 0 0;
     align-self: stretch;
 }
@@ -199,6 +199,7 @@ line-height: normal;
     color: #1D4ED8;
     display: flex;
     height: 44px;
+    width: 320px;
     padding: 6px 12px;
     justify-content: center;
     align-items: center;
@@ -337,7 +338,11 @@ line-height: normal;
 padding-left: 0;
 }
 .xyzz{
-    margin-top: 20px !important;
+    margin-top: 20px ;
+    display: flex;
+align-items: center;
+gap: 4px;
+align-self: stretch;
 }
 
   .pay {
@@ -402,4 +407,7 @@ padding-left: 0;
     margin: 0; /* Ensure text aligns perfectly with the switch */
   }
   
-   
+   .pbtns{
+    margin-top: 18px;
+    height: 46px;
+   }
