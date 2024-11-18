@@ -406,6 +406,13 @@ align-self: stretch;
   input:checked + .slider:before {
     transform: translateX(26px);
   }
+  .switch input:checked + .slider {
+    background-color: #ccc; /* Set the background color to gray when off */
+  }
+  
+  .switch input:checked + .slider:before {
+    transform: translateX(0px); /* Keep the circle on the left when off */
+  }
   
   .payP1, .payP2 {
     margin: 0; /* Ensure text aligns perfectly with the switch */
